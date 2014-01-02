@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway>
+    <sessions>
+        <session>
+        	<channelIds>100000</channelIds>
+            <upstream>
+	          <host>127.0.0.1</host>
+              <port>7895</port>
+              <user>901782</user>
+              <passwd>ICP</passwd>
+              <gateId>1010</gateId>
+              <version>1</version>
+              <idleTime>300</idleTime>
+              <lifeTime>259200</lifeTime>
+              <!--poolCheckoutTimeout  TimeUnit.MILLISECONDS -->
+              <poolCheckoutTimeout>100</poolCheckoutTimeout>
+              <poolWatchTime>20</poolWatchTime>
+              <maxRetry>3</maxRetry>
+              <retryWaitTime>60</retryWaitTime>
+              <maxSessions>1</maxSessions>
+              <windows>16</windows>
+              <generalThreadNum>0</generalThreadNum>
+              <scheduleThreadNum>0</scheduleThreadNum>
+              
+              <receiveQueueName>receiver7</receiveQueueName>
+              <responseQueueName>response7</responseQueueName>
+              <deliverQueueName>deliver7</deliverQueueName>
+              <reserveQueueName>reserve7</reserveQueueName>
+              <receiveQueuePathHome>z:\\cmppsgw</receiveQueuePathHome>
+              <responseQueuePathHome>z:\\cmppsgw</responseQueuePathHome>
+              <deliverQueuePathHome>z:\\cmppsgw</deliverQueuePathHome>
+			  <reserveQueuePathHome>z:\\cmppsgw</reserveQueuePathHome>			  
+            </upstream>
+            <downstream>
+              <host>127.0.0.1</host>
+              <port>7915</port>
+              <user>901782</user>
+              <passwd>ICP</passwd>
+              <gateId>1010</gateId>
+              <version>0</version>
+              <idleTime>300</idleTime>
+              <lifeTime>259200</lifeTime>
+              <poolCheckoutTimeout>100</poolCheckoutTimeout>
+              <poolWatchTime>30</poolWatchTime>
+              <maxRetry>3</maxRetry>
+              <retryWaitTime>60</retryWaitTime>
+              <maxSessions>10</maxSessions>
+              <windows>16</windows>
+              <generalThreadNum>0</generalThreadNum>
+              <scheduleThreadNum>0</scheduleThreadNum>
+              
+              <receiveQueueName>receiver8</receiveQueueName>
+              <responseQueueName>response8</responseQueueName>
+              <deliverQueueName>deliver8</deliverQueueName>
+              <reserveQueueName>reserve8</reserveQueueName>
+              <receiveQueuePathHome>z:\\cmppsgw</receiveQueuePathHome>
+              <responseQueuePathHome>z:\\cmppsgw</responseQueuePathHome>
+              <deliverQueuePathHome>z:\\cmppsgw</deliverQueuePathHome>
+			  <reserveQueuePathHome>z:\\cmppsgw</reserveQueuePathHome>			       
+            </downstream>
+                    	
+            <duplexstream>
+              <host>127.0.0.1</host>
+              <port>7891</port>
+              <user>901782</user>
+              <passwd>ICP</passwd>
+              <gateId>1010</gateId>
+              <version>48</version>  
+              <idleTime>300</idleTime>
+              <lifeTime>259200</lifeTime>
+              <poolCheckoutTimeout>100</poolCheckoutTimeout>
+              <poolWatchTime>30</poolWatchTime>              
+              <maxRetry>3</maxRetry>
+              <retryWaitTime>60</retryWaitTime>
+              <maxSessions>1</maxSessions>
+              <windows>16</windows>
+              <generalThreadNum>0</generalThreadNum>
+              <scheduleThreadNum>0</scheduleThreadNum>
+              
+              <receiveQueueName>receiver9</receiveQueueName>
+              <responseQueueName>response9</responseQueueName>
+              <deliverQueueName>deliver9</deliverQueueName>
+              <reserveQueueName>reserve9</reserveQueueName>
+              <receiveQueuePathHome>z:\\cmppsgw</receiveQueuePathHome>
+              <responseQueuePathHome>z:\\cmppsgw</responseQueuePathHome>
+              <deliverQueuePathHome>z:\\cmppsgw</deliverQueuePathHome>
+			  <reserveQueuePathHome>z:\\cmppsgw</reserveQueuePathHome>			         
+            </duplexstream>        	
+        </session>        
+    </sessions>
+    
+</gateway>
